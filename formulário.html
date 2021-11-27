@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang = "pt-BR"> 
+  <head>
+    <meta charset = "UTF-8">
+    <title>formDemo.html</title>
+  </head>
+  <body>
+   <!--  <h1>Formulário de Inscrição</h1> -->
+    <form action = "">
+      <fieldset>
+        <legend>Formulário de Inscrição</legend>
+        <p>
+          <label>Nome</label>
+          <input type = "text"
+                 id = "myText"
+                 placeholder = "Insira seu nome" />
+        </p>
+        <p>
+          <label>Sobrenome</label>
+          <input type = "text"
+                 id = "myText"
+                 placeholder = "Insira seu sobrenome" />
+        </p>
+        <p>
+          <label>Idade</label>
+          <input type = "number" name="Idade"
+                min = "18"
+                max = "120"/>
+        </p>
+        <p>
+            <label>E-mail</label>
+            <input type = "text"
+                   id = "myText"
+                   placeholder = "Insira seu e-mail" />
+        </p>
+        <p>
+            <label>Sexo</label>
+            <input type = "radio"
+                   name = "radSize"
+                   id = "sizeSmall"
+                   value = "small"
+                   checked = "checked" />Masculino
+            <input type = "radio"
+                   name = "radSize"
+                   id = "sizeMed"
+                   value = "medium" />Feminino
+        </p>
+        <p>
+            <label>Foto</label>
+            <input type="file" name="pic" size="40" 
+            accept="image/jpeg" accept="image/PNG" >
+        </p>
+        <p>
+            <label>País</label>
+            <select id = "myList">
+              <option value = "1">Argentina</option>
+              <option value = "2">Brasil</option>
+              <option value = "3">Uruguai</option>
+              <option value = "4">Paraguai</option>
+            </select>
+        </p>
+        <p>
+            <label>As linguagens que você prefere?</label>
+            <select name="sometext" multiple="multiple">
+                <option>Java</option>
+                <option>C</option>
+                <option>C++</option>
+                <option>PHP</option>
+             </select>
+             (Para fazer várias escolhas, mantenha a tecla CTRL pressionada)
+        </p>
+        <p>
+          <label>Áreas de Atuação</label>
+           <input type = "checkbox"
+                 id = "1"
+                 value = "Computação" /> Computação
+          <input type = "checkbox"
+                 id = "2"
+                 value = "Gestão" /> Gestão
+          <input type = "checkbox"
+                 id = "3"
+                 value = "Pedagogia" /> Pedagogia
+        </p>
+        <p>
+          <input type = "button" value = "Enviar" />
+          <input type = "reset" value = "Limpar"/>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
